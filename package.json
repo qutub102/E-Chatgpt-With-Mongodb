@@ -1,0 +1,24 @@
+{
+  "name": "test-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon enterprise-chatgpt-backend/server.js",
+    "client": "npm run start --prefix enterprise-chatgpt-frontend",
+    "both": "concurrently \"npm run dev\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongoose": "^7.5.1",
+    "nodemon": "^3.0.1",
+    "openai": "^4.11.0"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
